@@ -1,0 +1,56 @@
+package book_question_funcn;
+
+import java.util.Scanner;
+
+public class printing_armstrong_num_within_range {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner jk = new Scanner(System.in);
+		int num1  = jk.nextInt();
+		int num2 = jk.nextInt();
+	}
+	public static void armstrong_num(int num1, int num2) {
+		
+		for(int i = num1; i<=num2; i++) {
+			boolean arm = arm_check(i);
+			if(arm == true) {
+				System.out.println(i);
+				
+			}
+		}
+		
+	}
+	
+	public static boolean arm_chek(int num1) {
+		int nod = number_of_digit(int n);
+		int temp =num1;
+		int ans =0;
+		while(nod!=0) {
+		int rem = num1%10;
+		ans = ans + (int) Math.pow(rem, nod);
+		num1 = num1/10;
+		
+		
+		
+	}
+		if(temp == ans) {
+			return true;
+		}
+		else {
+			return false;
+		}
+
+}
+	public static int number_of_digits(int num1) {
+		int count =0;
+		while(num!=0) {
+			count++;
+			int num1 = num/10;
+			
+		}
+		return count;
+	}
+	
+	 
+}
