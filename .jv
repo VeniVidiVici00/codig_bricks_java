@@ -1,0 +1,26 @@
+package pitam_pura_29_sp;
+
+public class coin_change {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		coin_change(new int[] {2,3,5},0,10,"");
+	}
+	public static void coin_change (int[]arr, int v, int amount, String ans) {
+		
+		if(amount ==0) {
+			System.out.println(ans);
+			return;
+		}
+		if(v == arr.length || amount<0) {
+			return;
+		}
+		
+		coin_change(arr, v+1, amount, ans);
+		
+		coin_change(arr, v, amount-arr[v], ans + arr[v]);
+		
+	
+
+}
+}
