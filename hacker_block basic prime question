@@ -1,0 +1,132 @@
+/*You are given an integer N. You need to print the series of all prime numbers till N.
+
+Input Format
+
+The first and only line of the input contains a single integer N denoting the number till where you need to find the series of prime number.
+
+Output Format
+
+Print the desired output in single line separated by spaces.
+
+Constraints
+
+1<=N<=1000
+
+SAMPLE INPUT 
+9
+SAMPLE OUTPUT 
+2 3 5 7
+*/
+package hacker_earth;
+
+import java.util.Scanner;
+
+public class basic {
+
+	public static void main(String[] args) {
+
+		
+		Scanner s = new Scanner(System.in);
+		int N = s.nextInt();
+
+		for (int i = 2; i <= N; i++) {
+		boolean ch=false;
+		for(int j=2;j<=Math.sqrt(i);j++)
+		{
+		if(i%j==0)
+		{
+		ch=true;
+		break ;
+		}
+		}
+		if (ch==false)
+		{
+		System.out.print(i+" ");
+		}
+		
+
+		}
+	}
+}
+
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//		// TODO Auto-generated method stub
+//		Scanner jk = new Scanner(System.in);
+//		int num = jk.nextInt();
+//		printing_prime(num);
+//	}
+//	
+//	public static void printing_prime(int num) {
+//		for(int i = 2; i<=num; i++) {
+//				boolean ans =  is_prime(i);
+//				if(ans == true) {
+//					System.out.println(i + " ");
+//				}
+//				
+//	}
+//	}
+//
+//		
+//		
+//		
+//		//		for(int i = 1; i<= num; i++) {
+////			for(int j = 2; j<num/2; j++) {
+////				if(num/j==0) {
+////					return false;
+////				}
+////			}return true;
+//		
+//	public static boolean is_prime(int num) {
+//		//for(int i =1; i<=num; i++) {
+//			for(int j =2; j<num; j++) {
+//				if(num%j==0) {
+//				return false;
+//			}
+//			
+//		}return true;
+//	
+//	
+//	}
+//}
+
+
+
