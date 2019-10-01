@@ -1,0 +1,27 @@
+package book_question_funcn;
+
+import java.util.Scanner;
+
+public class program_to_reverse_an_array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner jk = new Scanner(System.in);
+		int row = jk.nextInt();
+		int [] arr = new int[row];
+		for(int i =0; i<arr.length; i++) {
+			arr[i] = jk.nextInt();
+		}
+		
+		int j = arr.length-1;
+		//System.out.println(arr[j]);
+		while(j!=-1) {
+			System.out.println(arr[j]);
+			j--;
+		}
+		
+		
+		
+		
+	}
+}
