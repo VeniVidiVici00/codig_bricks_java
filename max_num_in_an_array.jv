@@ -1,0 +1,45 @@
+package book_question_funcn;
+
+import java.util.Scanner;
+
+public class wap_max_of_an_array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int max = -11111111;
+		Scanner jk = new Scanner(System.in);
+		int row = jk.nextInt();
+		//int col = jk.nextInt();
+		int [] arr= new int[row];
+		for(int i =0; i<row; i++) {
+			//for(int j =0; j<col; j++) {
+				arr[i]= jk.nextInt();
+		//	int max = -14756;	
+				
+			
+		}
+		
+		max(arr);
+		
+
+	}
+	public static void max(int[]arr) {
+		int max = -11111;
+		for(int i = 0; i<arr.length; i++) {
+			
+			if(max <arr[i]) {
+				max = arr[i];
+				//System.out.println(max);
+				
+			}else{
+				max = max;
+				//System.out.println(max);
+			}
+			//System.out.println(max);
+			
+		}
+		System.out.println(max);
+	}
+	
+
+}
