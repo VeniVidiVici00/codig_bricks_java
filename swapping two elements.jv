@@ -31,3 +31,44 @@ public class accesing_array_values {
 }
 
 
+****************************************************************************************************************************
+accesing and swapping with different function
+package array;
+
+import java.util.Scanner;
+
+public class accesing_array_values {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner S = new Scanner(System.in);
+		int [] arr = {22, 23, 24, 25,26};
+		int num = arr.length;
+		accessing_elements( arr, arr.length);
+		System.out.println(arr[3]+ " "+ arr[4]);
+		swapping_elements(arr, 3, 4);
+		System.out.println(arr[3] + " " +  arr[4]);
+		
+		accessing_elements(arr, arr.length );
+		
+		
+	
+			}
+
+	public static void swapping_elements(int[] arr, int i, int j) {
+		int temp = arr[i];
+		arr[i]= arr[j];
+		arr[j] = temp;
+		
+		
+	}
+
+	public static void accessing_elements(int [] arr, int num) {
+	for(int i =0; i<num; i++) {
+		System.out.print(arr[i]+ " ");
+	}
+	}
+
+}
+
+
