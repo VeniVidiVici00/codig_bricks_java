@@ -1,0 +1,48 @@
+package string;
+
+import java.util.Scanner;
+
+public class remove_repetation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner jk = new Scanner(System.in);
+		String  str = jk.nextLine();
+		StringBuilder sb = new StringBuilder(str);
+		duplicates(sb);
+		
+
+	}
+	public static void duplicates(StringBuilder sb) {
+		
+//		int i = 0;
+//			int k =sb.length()-1;
+//			while(i<k) {
+//				if(sb.charAt(i)==sb.charAt(k)) {
+//					sb.deleteCharAt(k);
+//					
+//				}
+//			
+//			
+//			i++;
+//			k--;
+//			}
+//			System.out.println(sb);
+//			
+		int l = sb.length()-1;
+		for(int i =0; i<sb.length();i++) {
+			for(int k=i+1;k<sb.length();k++) {
+				if(sb.charAt(i)==sb.charAt(k)){
+					sb.deleteCharAt(k);
+					
+				}
+				//System.out.println(sb);
+				
+			}
+			//System.out.println(sb);
+			
+		}System.out.println(sb);
+		
+	}
+
+}
