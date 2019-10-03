@@ -1,0 +1,60 @@
+/*
+ * Take as input N, a number. Take N more inputs and store that in an array.
+ *  Write a recursive function which inverses the array. Print the values of inverted array
+
+Input Format
+Enter a number N and take N more inputs
+
+Constraints
+None
+
+Output Format
+Display the values of the inverted array in a space separated manner
+
+Sample Input
+4
+1
+0
+2
+3
+Sample Output
+1 0 2 3
+ */
+
+package array;
+
+import java.util.Scanner;
+
+public class inverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner jk = new Scanner(System.in);
+		int row = jk.nextInt();
+		int[] arr = new int[row];
+		for(int i =0;i<row; i++) { 
+			arr[i] = jk.nextInt();
+			}
+		//reverse_print(arr);
+		inverse_array(arr);
+		
+}
+	public static void reverse_print(int[] arr) {
+//		for(int j= arr.length-1; j!=-1; j-- ) {
+//			System.out.println(arr[j]);
+//			
+//		}
+		int j = arr.length-1;
+		while(j!=0) {
+			System.out.print(arr[j] + " ");
+			j--;
+		}
+		
+	}
+	public static void inverse_array(int[] arr) {
+		for(int i =0; i<arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+	}
+
+}
