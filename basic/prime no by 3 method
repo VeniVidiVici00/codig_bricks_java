@@ -1,0 +1,77 @@
+package lecture_1_basics;
+
+import java.util.Scanner;
+
+public class prime_num {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner jk = new Scanner(System.in);
+		int n = jk.nextInt();
+		/*
+		int flag =0;
+		for(int i =2; i<n; i++) {
+			if(n%2==0) {
+				flag =1;
+			}
+		}
+		if(flag ==0) {
+			System.out.println("prime");
+		}else {
+			System.out.println("not prime");
+		}
+		
+	}
+
+}
+*/
+//**************************************************************************************************
+// method 2
+	/*
+	int fact = 1;
+	for(int i = 1; i<n; i++) {
+		if(n%i==0) {
+			fact++;
+		}
+	}
+	if(fact ==2) {
+		System.out.println("prime");
+	}else {
+		System.out.println("not prime");
+	}
+		
+	}
+}
+*/
+
+//********************************************************************************************************
+// method 3
+
+int flag =0;
+int div = 2;
+	while(div<n) {
+		if(n%div==0) {
+		System.out.println("not prime");
+		flag =1;
+		
+		break;
+
+	}
+		div++;
+	
+	
+	
+} 
+	if(flag ==0) {
+		System.out.println("prime");
+	}
+
+
+
+
+	}
+}
+
+
+
