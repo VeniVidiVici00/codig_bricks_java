@@ -1,0 +1,78 @@
+package three;
+import java.util.*;
+public class reverse_rotate_inverse_subarray {
+static Scanner jk = new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = jk.nextInt();
+		int [] arr = new int[n];
+		for(int i =0; i<arr.length; i++) {
+			arr[i] = jk.nextInt();
+		}
+		//int rot = jk.nextInt();
+		//reverse( arr);
+		//display(arr);
+//		rotate( arr, 4);
+//		display(arr);
+//		int [] res =inverse(arr);
+//		display(res);
+		subarray( arr);
+}
+	public static void reverse(int[] arr) {
+		int lo = 0;
+		int hi = arr.length-1;
+		while(lo<= hi) {
+			
+			int temp = arr[lo];
+			 arr[lo] = arr[hi];
+			 arr[hi]= temp;
+			 
+			 lo++;
+			 hi--;
+			 }
+		}
+
+	public static void display(int [] arr) {
+		for(int i =0; i<arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+	public static void rotate(int[] arr, int rot) {
+		for(int r =1; r<=rot; r++) {
+			// storing last value
+			int temp = arr[arr.length-1];
+		// shifting the value
+		for(int i =arr.length-1 ; i>=1; i--) {
+			arr[i] = arr[i-1];
+			
+		}
+		
+		arr[0] = temp;
+		
+		}	
+		
+	}
+	public static int[] inverse(int[] arr) {
+		int [] newarr = new int[arr.length];
+		for(int i = 0; i<=arr.length-1; i++) {
+			newarr[arr[i]] = i;
+		}
+		 
+		return  newarr;
+		
+	}
+	public static void subarray(int [] arr) {
+		for(int i =0; i<=arr.length; i++) {
+			for(int j = i; j<=arr.length; j++) {
+				System.out.print(i + " " + j+ ":");
+				for(int k = i; k<= j-1; k++) {
+			System.out.print(arr[k]+ " " );
+			
+	}
+			System.out.println();
+	
+}
+
+}
+}
+}
