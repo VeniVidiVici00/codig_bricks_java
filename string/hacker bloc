@@ -1,0 +1,60 @@
+/*
+ * /*
+ * Take as input S, a string.
+ *  Write a function that replaces every odd character with the character having just higher ascii code 
+ *  and every even character with the character having just lower ascii code. Print the value returned.
+
+
+Input Format
+String
+
+Constraints
+Length of string should be between 1 to 1000.
+
+Output Format
+String
+
+Sample Input
+abcg
+Sample Output
+badf
+
+ */
+
+
+package string;
+import java.util.*;
+public class odd_even_char_in_string {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner jk = new Scanner(System.in);
+		String name = jk.nextLine();
+		System.out.println(odd_even(name));
+		
+	
+		}
+		public static StringBuilder odd_even(String name) {
+			StringBuilder res = new StringBuilder("");
+			for(int i =0; i<name.length(); i++) {
+				if(i%2==0) {
+					char ch = name.charAt(i);
+					
+					res.append((char)(ch+1));
+					
+
+				}else {
+					int ch2= name.charAt(i);
+					res.append((char)(ch2-1));
+
+				}
+				
+			}
+			return res;
+			
+		}
+				
+		}
+
+
+
